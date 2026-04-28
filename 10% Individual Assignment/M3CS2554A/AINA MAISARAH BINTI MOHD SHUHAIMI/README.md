@@ -3,27 +3,48 @@
 - Student ID :2024230508
 - Course code : ITT440
 
-## 📌 Abstract
-This project presents the development of a Python-based simulation program designed to compare the performance of sequential, concurrent and parallel programming techniques. The application simulates a large volume of solitaire game outcomes using probabilistic models.  
-
-The program implements threading as a concurrent technique and multiprocessing as a parallel technique. Performance is evaluated based on execution time when processing thousands of simulated games. The results demonstrate that multiprocessing achieves the best performance for CPU-bound tasks, while threading is limited due to Python’s Global Interpreter Lock (GIL).  
 
 ## 🌟 Introduction
-With the advancement of multi-core processors, parallel programming has become essential for improving computational efficiency. Different programming techniques such as sequential execution, threading, and multiprocessing offer various levels of performance depending on the nature of the task.
 
-This project aims to develop a simulation system that processes a large volume of data in the form of solitaire game outcomes. The program compares execution performance using three approaches:
+### Overview
+This project is a Solitaire Parallel Simulation System developed using Python to analyze and compare different execution methods in computing.
 
-- Sequential programming
-- Concurrent programming (threading)
-- Parallel programming (multiprocessing)
+It simulates multiple solitaire game types such as Klondike, Spider, Freecell, Pyramid, and Tripeaks with different probability settings and difficulty levels.
 
+The system evaluates performance using three approaches:
+
+- Sequential 
+- Threading
+- Multiprocessing
+
+A large number of simulations are executed to measure execution time, win rate, and overall efficiency. The results are visualized using graphs for better comparison.
+
+### Problem Statement 
+
+Modern computing systems often struggle with performance when handling large-scale repetitive tasks. Sequential execution processes tasks one at a time, making it inefficient for heavy simulations.
+
+In this project, running a large number of solitaire simulations sequentially becomes slow and time-consuming. This creates the need to explore parallel execution methods such as threading and multiprocessing. 
+
+The key problems addressed in this project are:
+
+- ⏳ Sequential processing is too slow for large-scale simulations
+- 🧵 Multithreading in Python is limited due to the Global Interpreter Lock (GIL)
+- ⚡ There is a need to compare real performance differences between threading and multiprocessing
+- 📊 Lack of visual comparison makes performance analysis difficult
+
+Therefore, this project aims to determine which execution method (sequential, threading, or multiprocessing) provides the best performance for large-scale game simulations.
 ## 🔍 Objectives
 
-- To develop a Python program that simulates a large number of solitaire games
-- To implement concurrent programming using threading
-- To implement parallel programming using multiprocessing
-- To compare execution performance between different techniques
-- To analyze the effect of CPU cores on program efficiency
+- To develop a simulation-based application  
+	- Create a solitaire game simulator capable of running a large number of game iterations.
+- To implement different execution models  
+	- Apply sequential, threading (concurrent), and multiprocessing (parallel) techniques within the same system.
+- To analyze performance differences  
+	- Measure and compare execution time for each method under different workloads.
+- To demonstrate efficiency of parallel programming  
+	- Show how multiprocessing can significantly reduce execution time for CPU-intensive tasks.
+- To visualize and document results  
+	- Generate graphs and output files to clearly present performance comparisons.
   
 ## 💻 System Requirements
 - Operating System: Kali Linux
