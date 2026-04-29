@@ -142,3 +142,10 @@ def threaded_compute(data: list, num_threads: int) -> tuple:
 
     
  ## Algorithm 3: Multiprocessing Computation
+
+
+## Demonstrate Video
+
+
+
+## Counclusion
